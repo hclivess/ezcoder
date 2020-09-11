@@ -29,11 +29,11 @@ def generate():
     return keydict
 
 def encrypt_whole(pubkey, plaintext):
-    encrypted = encrypt(pubkey, plaintext.encode())
+    encrypted = encrypt(pubkey.strip(), plaintext.encode())
     return binascii.hexlify(encrypted)
 
 def decrypt_whole(privkey, ciphertext):
-    decrypted = decrypt(privkey, binascii.unhexlify(ciphertext))
+    decrypted = decrypt(privkey.strip(), binascii.unhexlify(ciphertext))
     return decrypted.decode()
 
 if __name__ == "__main__":
