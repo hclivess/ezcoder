@@ -1,4 +1,9 @@
 # ezcoder
+###  What it's not
+* It has nothing to do with Ethereum, it just uses its key format
+* It will not send encrypted messages on your behalf, you have to do that yourself
+
+### What it is
 Message encrypter and decrypter based on an Ethereum implementation of ECIES with a GUI.
 
 On starting, a keypair is generated and saved in **keys.dat** file. It should be possible to replace keys with your Ethereum wallet's keys, but I have not tested that.
